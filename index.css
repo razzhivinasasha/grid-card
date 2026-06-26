@@ -1,0 +1,459 @@
+html {
+    box-sizing: border-box;
+    font-family: "Mohave", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --color-primary: #fff; /*текст сайта*/
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    max-width: 1920px;
+    min-width: 1280px;
+    overflow-x: hidden; /*убераем горизонтальный скролл*/
+    background-color: rgba(3, 3, 3, 0.80);
+    margin: 0 auto;
+    color: white;
+}
+
+.container {
+    --color-primary: rgba(0, 0, 0, 0.87); /*box-shadow*/
+    position: relative;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto) 350px 1fr;
+    gap: 0 2em;
+    background-color: black;
+    border-radius: 4em;
+    background-image: url(https://cdn.motor1.com/images/mgl/PP7z4/s1/bugatti-la-voiture-noire.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin: 2em;
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 0px 0px 21px 7px var(--color-primary);
+}
+
+.one {
+    grid-column: 1/6;
+    background-color: black;
+    border-radius: 4em 4em 0 0;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrY7oxOiJ13owrl6HZ9OXW1_Sya8QKs_0pqQ&s);
+    background-size: 110% auto;
+    background-position: center;
+    border-radius: 50%;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    list-style-type: none;
+}
+
+li {
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+li:hover {
+    text-shadow: 0px 0px 7px #ff0000; /* Цвет в HEX*/
+    text-shadow: 0px 0px 7px rgba(255, 0, 0, 1); /* Цвет в RGBA*/
+    -webkit-text-stroke: 1px red; /* Для WebKit-браузеров */
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo-360 {
+    display: none; 
+}
+
+.two {
+    grid-column: 1/6;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: .1em;
+    padding: 2em;
+    background: #000000;
+    background: linear-gradient(180deg, #000000 42%, #ffffff00 100%);
+}
+
+.img-1 {
+    display: none;
+    grid-column: 1/6;
+    width: 100%;
+    height: 200px;
+    background-image: url(https://cdn.motor1.com/images/mgl/ybo2o/s1/bugatti-la-voiture-noire.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 1em;
+    box-shadow: 0px 0px 21px 7px var(--color-primary);
+}
+
+.three {
+    grid-column: 1/3;
+    justify-self: start; /* по горизонтали слева */
+    align-self: end; /* по вертикали снизу */
+    font-size: 1.5em;
+    padding: 0 5em 0 1em;
+    text-align: start;
+    font-weight: 300;
+    line-height: 1em;
+}
+
+.four {
+    grid-column: 4/6;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em 3em;
+    font-weight: 300;
+    line-height: 1em;
+    background-color: rgba(3, 3, 3, 0.80);
+    border: 1px sold rgba(3, 3, 3, 0.80);
+    border-radius: 2em;
+    box-shadow: 0px 0px 21px 7px var(--color-primary);
+}
+
+.img-2 {
+    display: none;
+    grid-column: 1/6;
+    width: 100%;
+    height: 360px;
+    background-image: url(https://cdn.motor1.com/images/mgl/PP7z4/s1/bugatti-la-voiture-noire.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 1em;
+    box-shadow: 0px 0px 21px 7px var(--color-primary);
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+button {
+    border: 1px solid #fff;
+    border-radius: 5em;
+    background-color: #000;
+    color: #fff;
+    font-size: .8em;
+    padding: .5em 1em;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    border: 1px solid red;
+    box-shadow: 0px 0px 21px 7px rgba(255, 0, 0, 0.87);
+}
+
+.five {
+    grid-column: 1/3;
+    background-image: url(https://yarpatent.ru/assets/images/blog/322.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2em;
+    box-shadow: 0px 0px 21px 7px var(--color-primary);
+    overflow: hidden; /* чтобы псевдоэлемент не выступал за границы */
+    transition: background-image 1s ease;
+}
+
+.five:hover {
+    background-image: url(https://img.goodfon.ru/wallpaper/big/3/7c/bugatti-bugatti-la-voiture-noire-la-voiture-noire-1.webp);
+}
+
+.six {
+    background-image: url(https://kolesa-photos.kcdn.online/kolesa-read/2019/03/05/ff546f86784b89fe3c397ba95fae28aa1407b9f8-872x491.jpg);
+    background-size: cover;
+    border-radius: 2em;
+    box-shadow: 0px 0px 21px 7px var(--color-primary);
+    overflow: hidden; /* чтобы псевдоэлемент не выступал за границы */
+    animation: scrollFast 10s linear infinite;
+    animation-direction: alternate; /* возвращается назад */
+}
+
+@keyframes scrollFast {
+    0% {
+        background-position: left center;
+    }
+    100% {
+        background-position: right center;
+    }
+}
+
+.seven {
+    grid-column: 4/6;
+    background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/190305135344-bugatti-la-voiture-noire.jpg?q=w_1110,c_fill);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2em;
+    box-shadow: 0px 0px 21px 7px var(--color-primary);
+    overflow: hidden; /* чтобы псевдоэлемент не выступал за границы */
+    transition: background-image 1s ease;
+}
+
+.seven:hover {
+    background-image: url(https://kolesa-photos.kcdn.online/kolesa-read/2019/03/05/ed1b4cab199d0c029f5345ca8622ed1ea110b00f-872x491.jpg);
+}
+
+.eight {
+    grid-column: 1/6;
+    text-align: center;
+    letter-spacing: .1em;
+    font-size: 1em;
+    font-weight: 200;
+    color: red;
+    background-color: black;
+    border-radius: 0 0 4em 4em;
+    text-shadow: 0px 0px 9px rgba(255, 255, 255, 1); /* Цвет в RGBA*/
+}
+
+@media screen and (max-width: 1430px) {
+    .two {
+        line-height: 1.3em;
+        letter-spacing: .1em;
+        padding: 1em 6em;
+    }
+    .three {
+        line-height: 1.2em;
+        padding-right: 1em;
+    }
+    .four {
+        padding: 0 1em;
+        line-height: 1.2em;
+    }
+}
+
+/*Адаптация страницы под размеры */
+@media screen and (min-width: 359px) and (max-width: 761px) {
+    body {
+        width: 100%;
+        max-width: 760px;
+        min-width: 360px;
+        height: auto;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        gap: 0;
+        background-image: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .one {
+        grid-column: 1/7;
+        display: flex;
+        justify-content: space-between;
+        background: #c20000;
+        background: linear-gradient(9deg, #c20000 0%, #000000 46%);
+        border-radius: 1em 1em 0 0;
+    }
+    ul {
+        display: flex;  /* изначально скрыто */
+        flex-direction: column;
+        align-items: flex-start;;
+        gap: 0.3em;
+        text-align: right;
+        padding: 1em 2em;
+    }
+    li {
+        font-size: 1em;
+        font-weight: 200;
+        letter-spacing: .1em;
+    }
+    /*третий элемент скрыт*/
+    ul li:nth-child(3) {
+        display: none;
+    }
+    .logo-360 {
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-image: url(https://avatars.mds.yandex.net/i?id=e38604cdcf0f7b4cc51d0032a6e4e07f47055b5c-4312678-images-thumbs&n=13);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 1em;
+        border-radius: 70%;
+    }
+    .two {
+        grid-column: 1/7;
+        font-size: 1em;
+        line-height: 1.5em;
+        letter-spacing: .1em;
+        padding: 1em 3em;
+        background:  #c20000;
+        background: linear-gradient(164deg,  #c20000 0%, #000000 67%);
+    }
+    .img-1 { 
+        grid-column: 1/7;
+        display: block;
+        width: 100%;
+        height: 250px;
+        background-size: 100% auto;
+        background-position: center;
+        box-shadow: 0px 0px 21px 7px var(--color-primary);
+        border-radius: 0;
+    }
+    .three {
+        grid-column: 1/5;
+        font-size: 1em;
+        margin: 1em 0 0 2em;
+        padding: 0;
+        text-align: start;
+        font-weight: 200;
+        line-height: 1.5em;
+    }
+    .four {
+        grid-column: 1/7;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 0;
+        font-weight: 200;
+        line-height: 1em;
+    }
+    h2 {
+        font-size: 1.2em;
+        font-weight: 300;
+        padding: 1em 0;
+        margin: 0;
+    }
+    .img-2 {
+        grid-column: 1/7;
+        display: block;
+        width: 100%;
+        height: 260px;
+        background-size: 100% auto;
+        box-shadow: 0px 0px 21px 7px var(--color-primary);
+        border-radius: .5em;
+        border-radius: 0;
+    }
+    .four p {
+        padding: 0 2em;
+        font-size: .8em;
+        font-weight: 200;
+        line-height: 1.5em;
+    }
+    button {
+        font-size: .7em;
+        margin: 1em 0;
+    }
+
+    .five {
+        grid-column: 1/7;
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+        margin: 2em 0;
+        /* Важные свойства для анимации */
+        position: relative; /* Чтобы псевдоэлемент позиционировался внутри */
+        background-image: url(https://yarpatent.ru/assets/images/blog/322.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .five::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://img.goodfon.ru/wallpaper/big/3/7c/bugatti-bugatti-la-voiture-noire-la-voiture-noire-1.webp);
+        background-size: cover;
+        background-position: center;
+        /* Запускаем бесконечный цикл анимации */
+        animation: smoothChange 6s infinite ease-in-out;
+    }
+        /* Описываем цикл плавной смены прозрачности */
+    @keyframes smoothChange {
+        0%, 100% {
+           opacity: 0; /* Видна первая картинка (фоновая) */
+        }
+        45%, 55% {
+           opacity: 1; /* Плавно проявляется вторая картинка (из ::after) */
+        }
+    }
+
+    .six {
+        grid-column: 1/7;
+        width: 100%;
+        height: 330px;
+        border-radius: 0;
+        margin: 2em 0;
+    }
+    @keyframes scrollFast {
+    0% {
+        background-position: left center;
+    }
+    100% {
+        background-position: right center;
+    }
+}
+
+    .seven {
+        grid-column: 1/7;
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+        margin: 2em 0;
+        /* Важные свойства для анимации */
+        position: relative; /* Чтобы псевдоэлемент позиционировался внутри */
+        background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/190305135344-bugatti-la-voiture-noire.jpg?q=w_1110,c_fill);
+        background-size: cover;
+        background-position: center;
+    }
+  /* Создаем второй слой со второй картинкой */
+    .seven::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://kolesa-photos.kcdn.online/kolesa-read/2019/03/05/ed1b4cab199d0c029f5345ca8622ed1ea110b00f-872x491.jpg);
+        background-size: cover;
+        background-position: center;
+        /* Запускаем бесконечный цикл анимации */
+        animation: smoothChange 6s infinite ease-in-out;
+    }
+    /* Описываем цикл плавной смены прозрачности */
+    @keyframes smoothChange {
+        0%, 100% {
+           opacity: 0; /* Видна первая картинка (фоновая) */
+        }
+        45%, 55% {
+           opacity: 1; /* Плавно проявляется вторая картинка (из ::after) */
+        }
+    }
+
+    .eight {
+        grid-column: 1/7;
+        text-align: center;
+    }
+}
