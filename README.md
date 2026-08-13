@@ -2,9 +2,9 @@
 
 Учебный проект, созданный для практической отработки навыков построения современных и гибких сеток с помощью технологии **CSS Grid Layout**.
 
-[![Скриншот веб страницы](https://github.com/razzhivinasasha/grid-card/blob/main/images/veb%20screen.png.png?raw=true)](razzhivinasasha.github.io/grid-card/)
+[![Скриншот веб страницы](https://github.com/razzhivinasasha/grid-card/blob/main/images/veb%20screen.png.png?raw=true)](https://github.com/razzhivinasasha/grid-card.git)
 
-🔗 **Посмотреть результат:** [Ссылка на ваш GitHub Pages](razzhivinasasha.github.io/grid-card/)
+🔗 **Посмотреть результат:** [Ссылка на мой GitHub Pages](https://github.com/razzhivinasasha/grid-card.git)
 
 ### 🎯 Цели и задачи работы:
 - Изучить работу с сетками (Grid) на реальном фрагменте страницы.
