@@ -2,7 +2,7 @@
 
 Учебный проект, созданный для практической отработки навыков построения современных и гибких сеток с помощью технологии **CSS Grid Layout**.
 
-![Скриншот веб страницы](images/veb-screen.png)
+![Скриншот веб страницы](https://github.com/razzhivinasasha/grid-card/blob/main/images/veb%20screen.png.png?raw=true)
 
 🔗 **Посмотреть результат:** [Ссылка на ваш GitHub Pages](razzhivinasasha.github.io/grid-card/)
 
